@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mr. Pool Leak Repair for a free pool inspection. Expert pool leak detection and repair services in Plano, TX and DFW Metroplex.">
+    <title>Contact Us - Mr. Pool Leak Repair | Plano, TX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Mr. Pool Leak Repair</h1>
+                    <p class="tagline">Plano, TX</p>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active cta-btn">Get Free Inspection</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="hero-subtitle">Get your free pool leak inspection today</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Grid Section -->
+    <section class="contact-grid">
+        <div class="container">
+            <!-- Left Column - Contact Info -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We're here to help. Reach out to us today for your free inspection.</p>
+
+                <div class="contact-method">
+                    <h3>📞 Call Us</h3>
+                    <a href="tel:214-972-3330" class="contact-link">(214) 972-3330</a>
+                    <p class="contact-note">Available 24/7 for emergencies</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>✉️ Email Us</h3>
+                    <a href="mailto:mrpoolleakrepair@gmail.com" class="contact-link">mrpoolleakrepair@gmail.com</a>
+                    <p class="contact-note">We'll respond within 24 hours</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>📍 Service Area</h3>
+                    <p class="contact-text">Plano, TX & DFW Metroplex</p>
+                    <p class="contact-note">Fast response times throughout the area</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>⏰ Hours</h3>
+                    <p class="contact-text">24/7 Emergency Service</p>
+                    <p class="contact-note">We're always available when you need us</p>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/mrpoolleakrepair" target="_blank" class="social-icon">Facebook</a>
+                        <a href="https://www.instagram.com/mrpoolleakrepair" target="_blank" class="social-icon">Instagram</a>
+                        <a href="https://x.com/@mplrdallas" target="_blank" class="social-icon">Twitter</a>
+                        <a href="https://www.tiktok.com/@mrpoolleakrepair" target="_blank" class="social-icon">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Contact Form -->
+            <div class="contact-form">
+                <h2>Schedule Your Free Inspection</h2>
+                <form id="inspectionForm" action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Pool Address *</label>
+                        <input type="text" id="address" name="address" placeholder="Street address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service...</option>
+                            <option value="leak-detection">Leak Detection</option>
+                            <option value="structural-repair">Structural Repair</option>
+                            <option value="pipe-repair">Pipe Repair</option>
+                            <option value="skimmer-repair">Skimmer Repair</option>
+                            <option value="foundation-repair">Foundation Repair</option>
+                            <option value="deck-repair">Deck Repair</option>
+                            <option value="not-sure">Not Sure - Need Inspection</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell Us About Your Pool Issue</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Describe your pool problem..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Inspection Time</label>
+                        <select id="preferred-time" name="preferred-time">
+                            <option value="morning">Morning (8am - 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                            <option value="evening">Evening (4pm - 8pm)</option>
+                            <option value="emergency">Emergency - Need ASAP</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Schedule Free Inspection</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How much does a leak inspection cost?</h3>
+                    <p>We offer free initial inspections to assess your pool's condition. This helps us provide accurate estimates for any necessary repairs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does an inspection take?</h3>
+                    <p>Most inspections take 1-2 hours, depending on pool size and complexity. We use advanced technology to ensure thorough results.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer emergency services?</h3>
+                    <p>Yes! We provide 24/7 emergency service throughout the DFW Metroplex. Call us anytime at (214) 972-3330.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What areas do you serve?</h3>
+                    <p>We serve Plano and the entire DFW Metroplex, including Dallas, Fort Worth, Arlington, Frisco, and McKinney.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What warranties do you offer?</h3>
+                    <p>We offer lifetime warranties on structural repairs, 5-year warranties on pipe repairs, and 6-year warranties on seal repairs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I know if I have a leak?</h3>
+                    <p>Common signs include: water level dropping more than ¼ inch per day, increasing water bills, wet spots around the pool, and equipment running longer than usual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Benefits of Our Free Inspection</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Save Money</h3>
+                    <p>Early detection prevents expensive water damage and high utility bills.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔍</div>
+                    <h3>Expert Diagnosis</h3>
+                    <p>Our certified technicians use advanced technology for accurate results.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>Quick scheduling and same-day emergency service available.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📋</div>
+                    <h3>Detailed Report</h3>
+                    <p>Get a comprehensive assessment and clear repair recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Fix Your Pool?</h2>
+            <p>Schedule your free inspection today and join our 550+ satisfied customers</p>
+            <div class="cta-buttons">
+                <a href="tel:214-972-3330" class="btn btn-primary btn-large">Call (214) 972-3330</a>
+                <a href="#inspectionForm" class="btn btn-secondary btn-large">Fill Out Form Above</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Mr. Pool Leak Repair</h4>
+                    <p>Serving the DFW Metroplex with expert pool leak detection and repair services.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/mrpoolleakrepair" target="_blank" title="Facebook">f</a>
+                        <a href="https://www.instagram.com/mrpoolleakrepair" target="_blank" title="Instagram">📷</a>
+                        <a href="https://x.com/@mplrdallas" target="_blank" title="Twitter">𝕏</a>
+                        <a href="https://www.tiktok.com/@mrpoolleakrepair" target="_blank" title="TikTok">♪</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong> <a href="tel:214-972-3330">(214) 972-3330</a></p>
+                    <p><strong>Service Area:</strong> Plano, TX & DFW Metroplex</p>
+                    <p><strong>Hours:</strong> 24/7 Emergency Service</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li>✓ CBP Certified</li>
+                        <li>✓ CPO Certified</li>
+                        <li>✓ TDLR Licensed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mr. Pool Leak Repair. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
